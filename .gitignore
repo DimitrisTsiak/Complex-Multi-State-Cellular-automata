@@ -1,0 +1,6 @@
+# Ignore pngs
+*.png
+
+# Ignore Python caches
+__pycache__/
+*.py[cod]

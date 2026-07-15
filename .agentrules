@@ -1,0 +1,55 @@
+# Cellular Automata Pipeline Instructions
+
+This file defines the standard operating procedures and guidelines for the cellular automata (CA) multi-agent pipeline in this workspace.
+
+##  Core Objective
+Discover, simulate, and visually review novel multi-state cellular automata rules over sequential or concurrent loops. In each loop, design 10 new, unique rules (Option A), run simulations for both single-seed and random-seed conditions, and visually select the most interesting patterns.
+
+---
+
+##  Subagent Configurations
+
+### 1. RuleDesigner
+*   **Role**: Cellular Automata Rule Designer
+*   **Prompt**:
+    ```
+    Design 10 distinct, interesting cellular automata rules for Loop {loop_number}. Focus on the domain: {domain_focus}. They must be mathematically different from all previous designed rules: {history}. Write the designs and reasoning to loop_{loop_number}/rules.md.
+    ```
+*   **Capabilities**: `enable_write_tools=True` (to write `rules.md`).
+
+### 2. CodeGenerator
+*   **Role**: Cellular Automata Programmer
+*   **Prompt**:
+    ```
+    Read the designed rules in loop_{loop_number}/rules.md. Write a Python script loop_{loop_number}/generate_ca.py that simulates these 10 rules for single-seed and random initializations. Save the 20 PNGs (800x800 resolution) in loop_{loop_number}/output/ using unique vibrant color palettes. Run the script to verify.
+    ```
+*   **Capabilities**: `enable_write_tools=True` (to write and run python scripts).
+
+### 3. VisualReviewer
+*   **Role**: Aesthetic and Visual Analyst
+*   **Prompt**:
+    ```
+    Review the 20 space-time diagrams in loop_{loop_number}/output/ using the view_file tool. Analyze their visual structure, order vs. chaos, and aesthetics. Identify the top 3 winner rules. Write a detailed report to loop_{loop_number}/review_report.md.
+    ```
+*   **Capabilities**: `enable_write_tools=True` (to write the review report and view images).
+
+---
+
+## Concurrency & Pipelining Strategy
+
+To run multiple loops efficiently:
+1.  **Pipeline Sequence**: Do not wait for the Visual Review of Loop $N$ to finish before starting Loop $N+1$. As soon as Loop $N$'s Code Generation is complete, launch the Visual Reviewer for Loop $N$ and concurrently launch the Rule Designer for Loop $N+1$.
+2.  **Parallel Domain Partitioning**: For large batches of loops, partition the design space into distinct domains and launch the Rule Designers in parallel:
+    *   **Loop 3**: Reaction-Diffusion & Chemical Waves
+    *   **Loop 4**: Granular Flows, Sandpiles & Gravity
+    *   **Loop 5**: Neural Firing, Plasticity & Memory
+    *   **Loop 6**: Fluid & Convective Systems
+    *   **Loop 7**: Biological Growth & Chiral Asymmetry
+    *   **Loop 8**: Quantum-walk & Wave Interference
+    *   **Loop 9**: Social Segregation & Game Theory
+    *   **Loop 10**: Cryptographic Scramblers & Chaotic Maps
+
+---
+
+## Final Deliverable
+At the end of the experiment, compile a grand report `cellular_automata_grand_report.md` in the brain/artifact directory showing the top 10 overall favorite configurations (copied to the artifact directory) using the markdown `carousel` component.
