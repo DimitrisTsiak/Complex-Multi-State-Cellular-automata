@@ -36,7 +36,7 @@ The following table summarizes the visual characteristics, classification, and a
 ## Detailed Analysis of Top 3 Winners
 
 ### 🥇 Winner: Rule 7 — Morphogenetic French Flag Wave
-* **File Links:** [rule_07_single.png](file:///C:/programming/complex_cellular_automata/loop_7/output/rule_07_single.png) | [rule_07_random.png](file:///C:/programming/complex_cellular_automata/loop_7/output/rule_07_random.png)
+* **File Links:** [rule_07_single.png](file:///C:/programming/complex_cellular_automata/loop_7/output/rule_07_single_seed.png) | [rule_07_random.png](file:///C:/programming/complex_cellular_automata/loop_7/output/rule_07_random.png)
 * **Biological Mechanism:** Models morphogen flow (pink/orchid) from a fixed organizer (white) that drives multi-stage differentiation (dodger blue, tomato red, lime green).
 * **Space-Time Diagram Analysis:**
   * *Single-Seed:* The single seed grows to the right, generating a repeating wave of morphogens (states 2 and 3) that propagates at a speed of 1 cell/step. The resulting space-time diagram shows a highly regular, diagonal pink/orchid striped pattern. Interestingly, because of the specific timing of the propagation wave, cells do not reach the threshold to stabilize into states 4, 5, or 6, but instead stay in a perpetual propagating cycle.
@@ -44,7 +44,7 @@ The following table summarizes the visual characteristics, classification, and a
 * **Aesthetics & Order vs. Chaos:** This rule is visually stunning. The file size of `rule_07_random.png` (106 KB) is 15–20 times larger than the other images, reflecting its high texture density and visual details. The contrast between the neon pink/orchid waves, the dark gray-blue background, and the solid blue/red/green columns produces a striking, high-frequency textile-like pattern.
 
 ### 🥈 Runner-up: Rule 5 — Asymmetric Stem Cell Niche
-* **File Links:** [rule_05_single.png](file:///C:/programming/complex_cellular_automata/loop_7/output/rule_05_single.png) | [rule_05_random.png](file:///C:/programming/complex_cellular_automata/loop_7/output/rule_05_random.png)
+* **File Links:** [rule_05_single.png](file:///C:/programming/complex_cellular_automata/loop_7/output/rule_05_single_seed.png) | [rule_05_random.png](file:///C:/programming/complex_cellular_automata/loop_7/output/rule_05_random.png)
 * **Biological Mechanism:** Models an anchored stem cell niche (red-orange/gold) dividing asymmetrically to produce progenitor cells (blue), which migrate right, differentiate to tissue (green), and undergo contact-inhibited apoptosis (gray/black) under overcrowding.
 * **Space-Time Diagram Analysis:**
   * *Single-Seed:* It forms a central vertical anchor (the niche) and a diagonal growing wedge to the right. Inside this wedge, a perfect grid of green (state 4) and black (state 0) vertical stripes emerges. This is because cells in the middle of a growing tissue segment become surrounded by other tissue cells, triggering apoptosis (turning 5, then 0), which leaves behind isolated, stable single-cell green columns.
@@ -52,7 +52,7 @@ The following table summarizes the visual characteristics, classification, and a
 * **Aesthetics & Order vs. Chaos:** The rule represents high-contrast, cyberpunk-themed order. The electric cyan/green lines on the pitch-black background look like a digital circuit board or a stylized barcode. It has excellent visual balance and mathematical precision.
 
 ### 🥉 Third Place: Rule 6 — Vascular Lumen Formation
-* **File Links:** [rule_06_single.png](file:///C:/programming/complex_cellular_automata/loop_7/output/rule_06_single.png) | [rule_06_random.png](file:///C:/programming/complex_cellular_automata/loop_7/output/rule_06_random.png)
+* **File Links:** [rule_06_single.png](file:///C:/programming/complex_cellular_automata/loop_7/output/rule_06_single_seed.png) | [rule_06_random.png](file:///C:/programming/complex_cellular_automata/loop_7/output/rule_06_random.png)
 * **Biological Mechanism:** Simulates vascularization, where a proliferating tip (bright red) grows right, leaving behind walls (dark red). When a wall cell is surrounded on both sides by other walls, it undergoes apoptosis (orange trigger, then dark gray, then black lumen) to hollow out the vessel.
 * **Space-Time Diagram Analysis:**
   * *Single-Seed:* The single seed grows to the right, forming a diagonal wedge. Inside the wedge, a repeating wall-lumen-wall-lumen pattern develops. The interior is not completely hollowed out but resolves into alternating dark red vertical wall lines and black hollow channels.

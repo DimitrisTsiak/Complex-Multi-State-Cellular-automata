@@ -76,24 +76,24 @@ The top three rules have been selected based on their ability to sustain **compl
 * **Complexity:** Self-sustaining wavy bands show a balance between order and chaos. The wavefronts are constantly shifting but never collapse into static bars or chaotic noise.
 * **Images:**
   * Random Seed:
-    ![Rule 4 Random](output/rule_4_random.png)
+    ![Rule 4 Random](output/rule_04_random.png)
   * Single Seed:
-    ![Rule 4 Single Seed](output/rule_4_single_seed.png)
+    ![Rule 4 Single Seed](output/rule_04_single_seed.png)
 
 ### Winner #2: Rule 5 (Cyclic Domination with Back-Inhibition)
 * **Visual Appeal:** High geometric contrast. It features sharp sawtooth boundaries, alternating vertical stripes, and detailed cross-hatching textures in cyan, pink, and yellow.
 * **Complexity:** A prime example of localized complexity. The back-inhibition prevents global synchronization, allowing different patterns (solid regions vs. zigzags vs. hatching) to coexist stably side-by-side.
 * **Images:**
   * Random Seed:
-    ![Rule 5 Random](output/rule_5_random.png)
+    ![Rule 5 Random](output/rule_05_random.png)
   * Single Seed:
-    ![Rule 5 Single Seed](output/rule_5_single_seed.png)
+    ![Rule 5 Single Seed](output/rule_05_single_seed.png)
 
 ### Winner #3: Rule 9 (Parity-Filtered Excitation)
 * **Visual Appeal:** A highly uniform, intricate woven textile pattern. The herringbone/braid pattern is detailed, clean, and highly satisfying.
 * **Complexity:** By embedding algebraic parity filters into the excitable media cycle, it maintains a continuous state of structured activity that behaves like a complex fractal weave.
 * **Images:**
   * Random Seed:
-    ![Rule 9 Random](output/rule_9_random.png)
+    ![Rule 9 Random](output/rule_09_random.png)
   * Single Seed:
-    ![Rule 9 Single Seed](output/rule_9_single_seed.png)
+    ![Rule 9 Single Seed](output/rule_09_single_seed.png)

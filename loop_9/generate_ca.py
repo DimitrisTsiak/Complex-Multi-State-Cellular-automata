@@ -9,7 +9,7 @@ OUTPUT_DIR = "loop_9/output"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def get_initial_grid(init_type, num_states, seed_val=1):
-    if init_type == "single":
+    if init_type in ("single", "single_seed"):
         grid = np.zeros(WIDTH, dtype=int)
         grid[WIDTH // 2] = seed_val
         return grid
@@ -543,8 +543,8 @@ def main():
         palette = palettes[rule_num]
         
         # Single Seed
-        history_single = fn("single")
-        save_image(history_single, palette, f"{OUTPUT_DIR}/rule_{rule_num:02d}_single.png")
+        history_single = fn("single_seed")
+        save_image(history_single, palette, f"{OUTPUT_DIR}/rule_{rule_num:02d}_single_seed.png")
         
         # Random
         history_random = fn("random")

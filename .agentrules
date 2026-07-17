@@ -22,6 +22,11 @@ Discover, simulate, and visually review novel multi-state cellular automata rule
 *   **Prompt**:
     ```
     Read the designed rules in loop_{loop_number}/rules.md. Write a Python script loop_{loop_number}/generate_ca.py that simulates these 10 rules for single-seed and random initializations. Save the 20 PNGs (800x800 resolution) in loop_{loop_number}/output/ using unique vibrant color palettes. Run the script to verify.
+
+    CRITICAL: The output PNG files MUST follow a strict naming convention:
+    1. Zero-pad the rule number to 2 digits (e.g. rule_01, rule_02, ..., rule_10).
+    2. Use exactly "single_seed" or "random" for the initialization type suffix.
+    Example Format: "rule_01_single_seed.png" and "rule_01_random.png".
     ```
 *   **Capabilities**: `enable_write_tools=True` (to write and run python scripts).
 

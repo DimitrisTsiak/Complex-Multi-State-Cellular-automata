@@ -483,7 +483,7 @@ def main():
         palette_np = np.array(palette, dtype=np.uint8)
         
         img_single = Image.fromarray(palette_np[history_single])
-        single_filename = os.path.join(output_dir, f"rule_{idx:02d}_single.png")
+        single_filename = os.path.join(output_dir, f"rule_{idx:02d}_single_seed.png")
         img_single.save(single_filename)
         print(f" Saved: {single_filename}")
         
@@ -509,7 +509,7 @@ def main():
     # Verification
     all_exist = True
     for idx, _, _ in rules:
-        f_single = os.path.join(output_dir, f"rule_{idx:02d}_single.png")
+        f_single = os.path.join(output_dir, f"rule_{idx:02d}_single_seed.png")
         f_random = os.path.join(output_dir, f"rule_{idx:02d}_random.png")
         
         for f in [f_single, f_random]:

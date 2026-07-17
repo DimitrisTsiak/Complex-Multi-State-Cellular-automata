@@ -355,7 +355,7 @@ def main():
             
             # Save using PIL Image
             img = Image.fromarray(rgb_data)
-            filename = f"rule_{rule_num}_{seed_type}.png"
+            filename = f"rule_{rule_num:02d}_{seed_type}.png"
             filepath = os.path.join(output_dir, filename)
             img.save(filepath)
             print(f"Saved: {filename} to {filepath}")

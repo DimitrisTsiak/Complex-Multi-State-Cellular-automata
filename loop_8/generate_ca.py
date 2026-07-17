@@ -466,11 +466,11 @@ def main():
         palette = palettes[r_idx]
         N_states = len(palette)
         
-        for init_type in ['single', 'random']:
+        for init_type in ['single_seed', 'random']:
             S = np.zeros(W, dtype=np.int8)
             
             # Setup initial state
-            if init_type == 'single':
+            if init_type == 'single_seed':
                 if r_idx == 1:
                     S[W // 2] = 5
                 elif r_idx == 2:
@@ -550,7 +550,7 @@ def main():
                 
             # Save as PNG
             img = Image.fromarray(rgb_data, 'RGB')
-            filename = f"rule{r_idx}_{init_type}.png"
+            filename = f"rule_{r_idx:02d}_{init_type}.png"
             filepath = os.path.join(output_dir, filename)
             img.save(filepath)
             print(f"Saved {filename} to {filepath}")

@@ -307,7 +307,7 @@ def simulate_and_save(rule_num, init_type, W=800, H=800):
     
     # Create PIL Image and save
     img = Image.fromarray(rgb_data)
-    filename = f"rule_{rule_num}_{init_type}.png"
+    filename = f"rule_{rule_num:02d}_{init_type}.png"
     filepath = os.path.join(OUTPUT_DIR, filename)
     img.save(filepath)
     print(f"Saved: {filepath}")

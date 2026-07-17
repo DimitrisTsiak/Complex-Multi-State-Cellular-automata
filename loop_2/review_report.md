@@ -17,7 +17,7 @@ Each of the 10 rules has been simulated under two conditions:
   * **Single Seed:** Dies out immediately after 3 steps, leaving a blank canvas (only a tiny dot at the top center).
 * **Behavioral Class:** Class II (Periodic/Static).
 * **Aesthetic Evaluation:** **Low.** The "Electric Cyan" palette (cyan/blue on dark blue) is vibrant, but the final pattern is overly static and lacks complexity.
-* **Diagrams:** [rule_01_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_01_random.png) | [rule_01_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_01_single.png)
+* **Diagrams:** [rule_01_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_01_random.png) | [rule_01_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_01_single_seed.png)
 
 ---
 
@@ -28,7 +28,7 @@ Each of the 10 rules has been simulated under two conditions:
   * **Single Seed:** Expands symmetrically to form a large, magnificent triangular wedge. The interior is filled with intricate, nested Sierpinski-like fractals, detailed grids, and periodic collapses/regenerations.
 * **Behavioral Class:** Class III/IV (Edge of Chaos / Fractal).
 * **Aesthetic Evaluation:** **Outstanding (10/10).** The "Sunset Fire" palette (gold, orange, crimson, plum) matches the fractal growth beautifully, creating a tapestry-like appearance.
-* **Diagrams:** [rule_02_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_02_random.png) | [rule_02_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_02_single.png)
+* **Diagrams:** [rule_02_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_02_random.png) | [rule_02_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_02_single_seed.png)
 
 ---
 
@@ -39,7 +39,7 @@ Each of the 10 rules has been simulated under two conditions:
   * **Single Seed:** Dies out immediately.
 * **Behavioral Class:** Class I (Extinction).
 * **Aesthetic Evaluation:** **Very Low.** The "Forest Acid" green palette is unused since the activity cannot sustain itself. The feedback threshold was too restrictive.
-* **Diagrams:** [rule_03_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_03_random.png) | [rule_03_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_03_single.png)
+* **Diagrams:** [rule_03_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_03_random.png) | [rule_03_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_03_single_seed.png)
 
 ---
 
@@ -50,7 +50,7 @@ Each of the 10 rules has been simulated under two conditions:
   * **Single Seed:** Generates a single, clean diagonal glider that propagates to the right, wrapping around the boundaries indefinitely.
 * **Behavioral Class:** Class IV (Localized Chiral Structures/Gliders).
 * **Aesthetic Evaluation:** **High (9/10).** The "Purple Rain" palette (magenta, violet, deep indigo) combined with the consistent diagonal flow creates a strong sense of motion.
-* **Diagrams:** [rule_04_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_04_random.png) | [rule_04_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_04_single.png)
+* **Diagrams:** [rule_04_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_04_random.png) | [rule_04_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_04_single_seed.png)
 
 ---
 
@@ -61,7 +61,7 @@ Each of the 10 rules has been simulated under two conditions:
   * **Single Seed:** Dies out immediately.
 * **Behavioral Class:** Class II (Extinction / Rare Solitary Gliders).
 * **Aesthetic Evaluation:** **Moderate.** The "Cyberpunk Grid" (hot pink, turquoise, yellow-green) is striking, but the space-time diagram is mostly empty.
-* **Diagrams:** [rule_05_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_05_random.png) | [rule_05_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_05_single.png)
+* **Diagrams:** [rule_05_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_05_random.png) | [rule_05_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_05_single_seed.png)
 
 ---
 
@@ -72,7 +72,7 @@ Each of the 10 rules has been simulated under two conditions:
   * **Single Seed:** Dies out immediately.
 * **Behavioral Class:** Class II (Self-limiting / Static).
 * **Aesthetic Evaluation:** **Moderate.** The "Autumn Leaves" palette (yellow, orange, brown) looks warm and natural, and the transient wedges are visually interesting, but the long-term state is sparse.
-* **Diagrams:** [rule_06_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_06_random.png) | [rule_06_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_06_single.png)
+* **Diagrams:** [rule_06_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_06_random.png) | [rule_06_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_06_single_seed.png)
 
 ---
 
@@ -83,7 +83,7 @@ Each of the 10 rules has been simulated under two conditions:
   * **Single Seed:** Generates a stunning, highly detailed symmetrical tree-like cone. The interior is packed with moss-like details and graded colors representing the decaying refractory states.
 * **Behavioral Class:** Class III/IV (Complex Organic Texturing).
 * **Aesthetic Evaluation:** **Excellent (9.5/10).** The "Graded Diffusion" palette (white, lime green, forest green, dark green) works in perfect harmony with the totalistic sum mechanics, yielding organic, soft-textured patterns.
-* **Diagrams:** [rule_07_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_07_random.png) | [rule_07_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_07_single.png)
+* **Diagrams:** [rule_07_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_07_random.png) | [rule_07_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_07_single_seed.png)
 
 ---
 
@@ -94,7 +94,7 @@ Each of the 10 rules has been simulated under two conditions:
   * **Single Seed:** Two diagonal waves propagate outward to the boundaries and then die out.
 * **Behavioral Class:** Class II (Sparse Gliders).
 * **Aesthetic Evaluation:** **Moderate.** The "Aurora Sky" palette (aurora green, cyan, blue, violet) is very beautiful, but the simulation is too sparse.
-* **Diagrams:** [rule_08_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_08_random.png) | [rule_08_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_08_single.png)
+* **Diagrams:** [rule_08_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_08_random.png) | [rule_08_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_08_single_seed.png)
 
 ---
 
@@ -105,7 +105,7 @@ Each of the 10 rules has been simulated under two conditions:
   * **Single Seed:** Dies out immediately.
 * **Behavioral Class:** Class I/II (Extinction / Static).
 * **Aesthetic Evaluation:** **Low.** Rainbow palette is mostly unused; the hashing condition was too restrictive, freezing growth.
-* **Diagrams:** [rule_09_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_09_random.png) | [rule_09_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_09_single.png)
+* **Diagrams:** [rule_09_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_09_random.png) | [rule_09_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_09_single_seed.png)
 
 ---
 
@@ -116,7 +116,7 @@ Each of the 10 rules has been simulated under two conditions:
   * **Single Seed:** Dies out immediately.
 * **Behavioral Class:** Class II (Sparse Gliders).
 * **Aesthetic Evaluation:** **Moderate-High.** The "Ice Palace" palette (glacial white, aquamarine, teal, midnight blue) is gorgeous, and the sparse gliders have nice clean trails.
-* **Diagrams:** [rule_10_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_10_random.png) | [rule_10_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_10_single.png)
+* **Diagrams:** [rule_10_random.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_10_random.png) | [rule_10_single.png](file:///C:/programming/complex_cellular_automata/loop_2/output/rule_10_single_seed.png)
 
 ---
 

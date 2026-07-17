@@ -385,7 +385,7 @@ def run_simulation(rule_num, init_type, W=800, T=800):
     step_fn = RULE_FUNCTIONS[rule_num]
     
     # Initialize grid
-    if init_type == "single":
+    if init_type == "single_seed":
         grid = np.zeros(W, dtype=int)
         grid[W // 2] = N - 1
     elif init_type == "random":
@@ -405,7 +405,7 @@ def run_simulation(rule_num, init_type, W=800, T=800):
     
     # Save as 800x800 PNG
     img = Image.fromarray(rgb_image)
-    filename = os.path.join(output_dir, f"rule_{rule_num}_{init_type}.png")
+    filename = os.path.join(output_dir, f"rule_{rule_num:02d}_{init_type}.png")
     img.save(filename)
     print(f"Saved: {filename}")
 
@@ -413,6 +413,6 @@ if __name__ == "__main__":
     print("Starting simulation for 10 rules...")
     for rule in range(1, 11):
         print(f"Simulating Rule {rule}...")
-        run_simulation(rule, "single")
+        run_simulation(rule, "single_seed")
         run_simulation(rule, "random")
     print("All simulations finished successfully!")

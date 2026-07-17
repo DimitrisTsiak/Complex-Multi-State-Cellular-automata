@@ -105,10 +105,10 @@ These rules simulate quantum-like behaviors (superposition, interference, tunnel
 *   **Complex Dynamics**: In the random-seed run, the space-time diagram acts as a complex interferometer circuit. The waves interact dynamically with the static mirrors (grey), phase-shifters (yellow), and beam splitters (white). Destructive interference cancels opposing waves, creating empty lanes next to densely populated zigzag highways.
 *   **Aesthetics**: The high contrast of neon green, cyan, magenta, and orange lines bouncing between static circuit elements against a deep navy background creates a stunning visual that resembles a futuristic optoelectronic chip or a laser light show.
 
-![Rule 8 Single-Seed](output/rule8_single.png)
+![Rule 8 Single-Seed](output/rule_08_single_seed.png)
 *Figure 1: Single-seed propagation showing reflection and phase shifting.*
 
-![Rule 8 Random-Seed](output/rule8_random.png)
+![Rule 8 Random-Seed](output/rule_08_random.png)
 *Figure 2: Random-seed complex optical circuitry showing multi-channel interference.*
 
 ---
@@ -118,10 +118,10 @@ These rules simulate quantum-like behaviors (superposition, interference, tunnel
 *   **Complex Dynamics**: The Euler discretization of the wave equation with clipping leads to flat, stable regions of displacement and velocity. When waves propagate in both directions, they form a rectilinear grid of intersecting colored bars. The clipping function ensures that the waves do not blow up, creating sharp boundaries between states.
 *   **Aesthetics**: The resulting space-time diagram looks like a carefully designed modernist textile or a digital glitch art canvas. The bright, contrasting blocks of orange, cyan, purple, and magenta create a highly ordered, geometric harmony.
 
-![Rule 3 Single-Seed](output/rule3_single.png)
+![Rule 3 Single-Seed](output/rule_03_single_seed.png)
 *Figure 3: Single-seed homogeneous light cone.*
 
-![Rule 3 Random-Seed](output/rule3_random.png)
+![Rule 3 Random-Seed](output/rule_03_random.png)
 *Figure 4: Random-seed tartan plaid pattern showing beautiful rectilinear order.*
 
 ---
@@ -131,8 +131,8 @@ These rules simulate quantum-like behaviors (superposition, interference, tunnel
 *   **Complex Dynamics**: It models exact charge conservation. Right-moving positive charges and left-moving negative charges collide and subtract algebraically. In the random-seed diagram, this leads to a fascinating "filtering" effect: the upper portion shows many collisions and crossings, but as time progresses, the opposing charges cancel each other out, leaving only a set of parallel right-moving orange lines that exit the system.
 *   **Aesthetics**: The visual signature is clean, sleek, and minimalist. The transition from a busy grid of collisions at the top to quiet, parallel "edge channels" at the bottom provides a satisfying visual narrative of order emerging from interaction.
 
-![Rule 7 Single-Seed](output/rule7_single.png)
+![Rule 7 Single-Seed](output/rule_07_single_seed.png)
 *Figure 5: Single-seed chiral charge propagation and cancellation.*
 
-![Rule 7 Random-Seed](output/rule7_random.png)
+![Rule 7 Random-Seed](output/rule_07_random.png)
 *Figure 6: Random-seed charge filtering showing emergence of parallel chiral channels.*
