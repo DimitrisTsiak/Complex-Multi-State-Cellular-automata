@@ -1,4 +1,4 @@
-#Complex Cellular Automata Exploration Pipeline
+# Complex Cellular Automata Exploration Pipeline
 
 This project is a multi-agent automated pipeline designed to discover, simulate, and visually review novel multi-state cellular automata (CA) rules across many domains, with the goal of discovering new rules that lead to insteresting structural patterns.
 
