@@ -1,6 +1,6 @@
 # Cellular Automata Visual & Aesthetic Analysis Report (Loop 1)
 
-This report presents a visual, aesthetic, and dynamical analysis of the 20 space-time diagrams generated from the 10 multi-state cyclic and excitable media rules defined in [rules.md](file:///C:/programming/complex_cellular_automata/loop_1/rules.md).
+This report presents a visual, aesthetic, and dynamical analysis of the 20 space-time diagrams generated from the 10 multi-state cyclic and excitable media rules defined in [rules.md](file:///C:/programming/complex_cellular_automata/generations/loop_1/rules.md).
 
 ---
 

@@ -382,7 +382,7 @@ def simulate(rule_func, initial_grid):
 
 
 def main():
-    output_dir = "loop_2/output"
+    output_dir = "generations/loop_2/output"
     os.makedirs(output_dir, exist_ok=True)
     
     rules = [

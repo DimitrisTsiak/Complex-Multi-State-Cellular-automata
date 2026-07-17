@@ -593,7 +593,7 @@ def run_ca_rule_10(init_type, X=800, T=800):
     return palette[grid]
 
 def main():
-    output_dir = "loop_12/output"
+    output_dir = "generations/loop_12/output"
     os.makedirs(output_dir, exist_ok=True)
     
     rules = {

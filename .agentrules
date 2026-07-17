@@ -13,7 +13,7 @@ Discover, simulate, and visually review novel multi-state cellular automata rule
 *   **Role**: Cellular Automata Rule Designer
 *   **Prompt**:
     ```
-    Design 10 distinct, interesting cellular automata rules for Loop {loop_number}. Focus on the domain: {domain_focus}. They must be mathematically different from all previous designed rules: {history}. Write the designs and reasoning to loop_{loop_number}/rules.md.
+    Design 10 distinct, interesting cellular automata rules for Loop {loop_number}. Focus on the domain: {domain_focus}. They must be mathematically different from all previous designed rules: {history}. Write the designs and reasoning to generations/loop_{loop_number}/rules.md.
     ```
 *   **Capabilities**: `enable_write_tools=True` (to write `rules.md`).
 
@@ -21,7 +21,7 @@ Discover, simulate, and visually review novel multi-state cellular automata rule
 *   **Role**: Cellular Automata Programmer
 *   **Prompt**:
     ```
-    Read the designed rules in loop_{loop_number}/rules.md. Write a Python script loop_{loop_number}/generate_ca.py that simulates these 10 rules for single-seed and random initializations. Save the 20 PNGs (800x800 resolution) in loop_{loop_number}/output/ using unique vibrant color palettes. Run the script to verify.
+    Read the designed rules in generations/loop_{loop_number}/rules.md. Write a Python script generations/loop_{loop_number}/generate_ca.py that simulates these 10 rules for single-seed and random initializations. Save the 20 PNGs (800x800 resolution) in generations/loop_{loop_number}/output/ using unique vibrant color palettes. Run the script to verify.
 
     CRITICAL: The output PNG files MUST follow a strict naming convention:
     1. Zero-pad the rule number to 2 digits (e.g. rule_01, rule_02, ..., rule_10).
@@ -34,7 +34,7 @@ Discover, simulate, and visually review novel multi-state cellular automata rule
 *   **Role**: Aesthetic and Visual Analyst
 *   **Prompt**:
     ```
-    Review the 20 space-time diagrams in loop_{loop_number}/output/ using the view_file tool. Analyze their visual structure, order vs. chaos, and aesthetics. Identify the top 3 winner rules. Write a detailed report to loop_{loop_number}/review_report.md.
+    Review the 20 space-time diagrams in generations/loop_{loop_number}/output/ using the view_file tool. Analyze their visual structure, order vs. chaos, and aesthetics. Identify the top 3 winner rules. Write a detailed report to generations/loop_{loop_number}/review_report.md.
     ```
 *   **Capabilities**: `enable_write_tools=True` (to write the review report and view images).
 

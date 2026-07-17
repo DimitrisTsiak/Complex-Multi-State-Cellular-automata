@@ -3,7 +3,7 @@ import numpy as np
 from PIL import Image
 
 # Output directory and grid size configuration
-output_dir = "loop_16/output"
+output_dir = "generations/loop_16/output"
 os.makedirs(output_dir, exist_ok=True)
 WIDTH = 800
 STEPS = 800

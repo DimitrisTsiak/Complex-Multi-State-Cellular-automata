@@ -7,16 +7,16 @@ from PIL import Image, ImageDraw, ImageFont
 
 # List of source image paths (relative to this script or absolute)
 WINNING_IMAGES = [
-    r"loop_1/output/rule_04_random.png",
-    r"loop_2/output/rule_02_random.png",
-    r"loop_2/output/rule_04_random.png",
-    r"loop_2/output/rule_07_single_seed.png",
-    r"loop_3/output/rule_08_single_seed.png",
-    r"loop_6/output/rule_01_random.png",
-    r"loop_8/output/rule_01_random.png",
-    r"loop_8/output/rule_02_random.png",
-    r"loop_9/output/rule_08_single_seed.png",
-    r"loop_10/output/rule_08_single_seed.png",
+    r"generations/loop_1/output/rule_04_random.png",
+    r"generations/loop_2/output/rule_02_random.png",
+    r"generations/loop_2/output/rule_04_random.png",
+    r"generations/loop_2/output/rule_07_single_seed.png",
+    r"generations/loop_3/output/rule_08_single_seed.png",
+    r"generations/loop_6/output/rule_01_random.png",
+    r"generations/loop_8/output/rule_01_random.png",
+    r"generations/loop_8/output/rule_02_random.png",
+    r"generations/loop_9/output/rule_08_single_seed.png",
+    r"generations/loop_10/output/rule_08_single_seed.png",
 ]
 
 # Labels to overlay on each corresponding frame (leave empty string to disable)

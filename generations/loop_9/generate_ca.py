@@ -5,7 +5,7 @@ import PIL.Image
 # Simulation Parameters
 STEPS = 800
 WIDTH = 800
-OUTPUT_DIR = "loop_9/output"
+OUTPUT_DIR = "generations/loop_9/output"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def get_initial_grid(init_type, num_states, seed_val=1):

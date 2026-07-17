@@ -104,17 +104,17 @@ Based on visual complexity, emergent physical behaviors, and aesthetic appeal, t
 ### 1. Winner #1: Rule 7 - Frictional Arrest (Granular Jamming)
 * **Rationale:** This is the most dynamic rule in the entire set. It perfectly captures the physical phenomenon of **intermittent jamming waves** that travel upstream (leftward) against the gravity flow (rightward). Visually, it is the only rule that features crossing diagonals (green flowing sand moving right, red jammed waves moving left), creating a highly complex, active, and balanced space-time texture.
 * **Aesthetic Appeal:** The high-contrast neon lime green and crimson red colors create a striking, futuristic look.
-* **Key Files:** [rule_7_random.png](file:///C:/programming/complex_cellular_automata/loop_4/output/rule_07_random.png) | [rule_7_single_seed.png](file:///C:/programming/complex_cellular_automata/loop_4/output/rule_07_single_seed.png)
+* **Key Files:** [rule_7_random.png](file:///C:/programming/complex_cellular_automata/generations/loop_4/output/rule_07_random.png) | [rule_7_single_seed.png](file:///C:/programming/complex_cellular_automata/generations/loop_4/output/rule_07_single_seed.png)
 
 ### 2. Winner #2: Rule 10 - Granular Percolation (Reverse Grading)
 * **Rationale:** This rule beautifully models the physics of **kinetic sieving** (the "brazilian nut effect"). The system successfully sorts a random mixture into bands of different grain sizes that circulate indefinitely. The result is a highly ordered but perpetually moving system with a perfect translational period of 800.
 * **Aesthetic Appeal:** The combination of neon yellow-green, hot pink, and indigo on black forms a rich, multi-colored woven plaid design that is arguably the most artistically pleasing image in the entire loop.
-* **Key Files:** [rule_10_random.png](file:///C:/programming/complex_cellular_automata/loop_4/output/rule_10_random.png) | [rule_10_single_seed.png](file:///C:/programming/complex_cellular_automata/loop_4/output/rule_10_single_seed.png)
+* **Key Files:** [rule_10_random.png](file:///C:/programming/complex_cellular_automata/generations/loop_4/output/rule_10_random.png) | [rule_10_single_seed.png](file:///C:/programming/complex_cellular_automata/generations/loop_4/output/rule_10_single_seed.png)
 
 ### 3. Winner #3: Rule 3 - Reversible Odd-Even Segregation
 * **Rationale:** Rule 3 displays elegant, conservative sorting dynamics using a block-partitioned update. The clean separation of particles into moving waves produces a crisp, uniform diagonal grid. Its simplicity under a single seed (a single perfect diagonal) contrast with its rich plaid pattern under random initialization.
 * **Aesthetic Appeal:** The teal/cyan and orange-red palette creates a very clean, high-contrast, modern textile-like pattern.
-* **Key Files:** [rule_3_random.png](file:///C:/programming/complex_cellular_automata/loop_4/output/rule_03_random.png) | [rule_3_single_seed.png](file:///C:/programming/complex_cellular_automata/loop_4/output/rule_03_single_seed.png)
+* **Key Files:** [rule_3_random.png](file:///C:/programming/complex_cellular_automata/generations/loop_4/output/rule_03_random.png) | [rule_3_single_seed.png](file:///C:/programming/complex_cellular_automata/generations/loop_4/output/rule_03_single_seed.png)
 
 ---
 

@@ -12,7 +12,7 @@ The instructions of the orchestrator agent are defined in the `.agentrules` file
 
 
 ```
-├── loop_N/                  # Loop folder (where N is 1 to 10)
+├── generations/loop_N/                  # Loop folder (where N is 1 to 10)
 │   ├── rules.md             # Rule definitions designed by RuleDesigner subagent
 │   ├── generate_ca.py       # Vectorized Python simulation script written by CodeGenerator
 │   ├── review_report.md     # Visual analysis and top winner selection by VisualReviewer
