@@ -4,7 +4,7 @@ This project is a multi-agent automated pipeline designed to discover, simulate,
 
 The instructions of the orchestrator agent are defined in the `.agentrules` file. You can change the parameters of the pipeline by modifying the `.agentrules` file. The pipeline is divided into 10 loops, each corresponding to a specific domain focus. You can change these domains to other ones or instrucct the LLM to create new ones.
 
-![Winners Showcase](winners_showcase.gif)
+![Winners Showcase](winners_1x5_showcase.gif)
 
 ---
 

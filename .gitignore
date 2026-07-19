@@ -1,6 +1,9 @@
 # Ignore pngs
 *.png
 
+winners_showcase.gif
+make_winners_gif.py
+
 # Ignore Python caches
 __pycache__/
 *.py[cod]
