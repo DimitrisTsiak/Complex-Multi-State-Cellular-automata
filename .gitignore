@@ -1,5 +1,6 @@
-# Ignore pngs
+# Ignore pngs (except the curated showcase originals)
 *.png
+!showcase/*.png
 
 winners_showcase.gif
 make_winners_gif.py

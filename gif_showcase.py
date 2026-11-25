@@ -15,43 +15,44 @@ PADDING = 0  # 0 padding for seamless horizontal strip
 CANVAS_WIDTH = 5 * IMAGE_W + 4 * PADDING
 CANVAS_HEIGHT = IMAGE_H
 
-# 3. Simple list of image paths to process (flat list)
+# 3. Simple list of image paths to process (flat list).
+#    showcase/ holds committed copies of the originals, so the GIF can be rebuilt from a clone.
 IMAGE_LIST = [
-    r"generations/loop_1/output/rule_04_random.png",
-    r"generations/loop_2/output/rule_02_random.png",
-    r"generations/loop_2/output/rule_04_random.png",
-    r"generations/loop_2/output/rule_07_single_seed.png",
-    r"generations/loop_3/output/rule_08_single_seed.png",
+    r"showcase/loop_01_rule_04_random.png",
+    r"showcase/loop_02_rule_02_random.png",
+    r"showcase/loop_02_rule_04_random.png",
+    r"showcase/loop_02_rule_07_single_seed.png",
+    r"showcase/loop_03_rule_08_single_seed.png",
 
-    r"generations/loop_6/output/rule_01_random.png",
-    r"generations/loop_8/output/rule_01_random.png",
-    r"generations/loop_8/output/rule_02_random.png",
-    r"generations/loop_9/output/rule_08_single_seed.png",
-    r"generations/loop_10/output/rule_08_single_seed.png",
+    r"showcase/loop_06_rule_01_random.png",
+    r"showcase/loop_08_rule_01_random.png",
+    r"showcase/loop_08_rule_02_random.png",
+    r"showcase/loop_09_rule_08_single_seed.png",
+    r"showcase/loop_10_rule_08_single_seed.png",
 
-    r"generations/loop_11/output/rule_03_random.png",
-    r"generations/loop_25/output/rule_08_random.png",
-    r"generations/loop_11/output/rule_05_random.png",
-    r"generations/loop_12/output/rule_02_single_seed.png",
-    r"generations/loop_12/output/rule_04_random.png",
+    r"showcase/loop_11_rule_03_random.png",
+    r"showcase/loop_25_rule_08_random.png",
+    r"showcase/loop_11_rule_05_random.png",
+    r"showcase/loop_12_rule_02_single_seed.png",
+    r"showcase/loop_12_rule_04_random.png",
 
-    r"generations/loop_13/output/rule_04_random.png",
-    r"generations/loop_13/output/rule_10_single_seed.png",
-    r"generations/loop_14/output/rule_03_single_seed.png",
-    r"generations/loop_14/output/rule_07_single_seed.png",
-    r"generations/loop_15/output/rule_09_random.png",
+    r"showcase/loop_13_rule_04_random.png",
+    r"showcase/loop_13_rule_10_single_seed.png",
+    r"showcase/loop_14_rule_03_single_seed.png",
+    r"showcase/loop_14_rule_07_single_seed.png",
+    r"showcase/loop_15_rule_09_random.png",
 
-    r"generations/loop_17/output/rule_09_single_seed.png",
-    r"generations/loop_20/output/rule_05_single_seed.png",
-    r"generations/loop_20/output/rule_06_single_seed.png",
-    r"generations/loop_22/output/rule_07_single_seed.png",
-    r"generations/loop_23/output/rule_07_single_seed.png",
+    r"showcase/loop_17_rule_09_single_seed.png",
+    r"showcase/loop_20_rule_05_single_seed.png",
+    r"showcase/loop_20_rule_06_single_seed.png",
+    r"showcase/loop_22_rule_07_single_seed.png",
+    r"showcase/loop_23_rule_07_single_seed.png",
 
-    r"generations/loop_23/output/rule_05_random.png",
-    r"generations/loop_24/output/rule_01_single_seed.png",
-    r"generations/loop_24/output/rule_02_single_seed.png",
-    r"generations/loop_24/output/rule_09_single_seed.png",
-    r"generations/loop_25/output/rule_01_single_seed.png",
+    r"showcase/loop_23_rule_05_random.png",
+    r"showcase/loop_24_rule_01_single_seed.png",
+    r"showcase/loop_24_rule_02_single_seed.png",
+    r"showcase/loop_24_rule_09_single_seed.png",
+    r"showcase/loop_25_rule_01_single_seed.png",
 
 
 

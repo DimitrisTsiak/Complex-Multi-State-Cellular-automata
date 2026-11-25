@@ -14,6 +14,8 @@ The instructions of the orchestrator agent are defined in the `.agentrules` file
 ```
 ├── ca_core/                 # Shared simulation engine + automatic quality gate
 │   └── template_generate_ca.py   # Starting point for each loop's generate_ca.py
+├── showcase/                # The original PNGs of the 30 showcase picks (committed)
+├── hall_of_fame/            # The 30 showcase rules, ported to the engine and reproducible
 ├── generations/loop_N/      # One folder per loop
 │   ├── rules.md             # Rule definitions designed by RuleDesigner subagent
 │   ├── generate_ca.py       # The loop's rules, written by CodeGenerator
@@ -27,7 +29,7 @@ The instructions of the orchestrator agent are defined in the `.agentrules` file
 ```
 
 ### Additional Root Files
-- **`gif_showcase.py`**: Stitches the chosen winning diagrams into the animated 1x5 showcase GIF.
+- **`gif_showcase.py`**: Stitches the chosen winning diagrams in `showcase/` into the animated 1x5 showcase GIF.
 - **`.agentrules`**: Standard operating procedures defining the multi-agent pipeline and loop domains.
 
 ---
@@ -46,6 +48,13 @@ python -m ca_core triage generations                    # re-score the images of
 
 - **Reproducible**: each image's seed is derived from (loop, rule, init type) and recorded in `manifest.json`, so a re-run produces identical images.
 - **Quality gate**: `triage.md` labels every image dead, frozen, periodic, translating, near-static, noise or dynamic, based on its last rows. Rules where every image is dead or frozen before the halfway row are marked REWORK. The CodeGenerator retunes them before the VisualReviewer sees the loop.
+
+---
+
+## Showcase & Hall of Fame
+
+- **`showcase/`** keeps the original images of the 30 showcase picks. Generated PNGs are otherwise not committed, and several picks came from unseeded randomness, so these files are the only copies.
+- **`hall_of_fame/`** holds those 30 rules ported to the engine, so they can be re-rendered at any size with fixed seeds: `python -m ca_core run hall_of_fame`. Deterministic rules match the originals exactly. Stochastic ones behave identically to their original code but draw different random numbers. See [`hall_of_fame/README.md`](hall_of_fame/README.md) for each rule.
 
 ---
 

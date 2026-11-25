@@ -1,0 +1,1236 @@
+{
+  "loop": "hall_of_fame",
+  "rules": [
+    {
+      "rule": 1,
+      "name": "Loop 1 Rule 4: Staged Excitation Cascade",
+      "gate": "REVIEW",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_01_single_seed.png",
+          "label": "dead",
+          "verdict": "FAIL",
+          "note": "single colour from row 141/800",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 1,
+            "entropy_bits": -0.0,
+            "activity": 0.0,
+            "compression": 1.0,
+            "period": 1,
+            "shift": 0,
+            "settle_row": 141
+          }
+        },
+        "random": {
+          "file": "output/rule_01_random.png",
+          "label": "periodic",
+          "verdict": "WARN",
+          "note": "repeats every 8 rows from row 26/800",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 8,
+            "entropy_bits": 3.0,
+            "activity": 1.0,
+            "compression": 0.048,
+            "period": 8,
+            "shift": 0,
+            "settle_row": 26
+          }
+        }
+      }
+    },
+    {
+      "rule": 2,
+      "name": "Loop 2 Rule 2: Parity-Gated Birth Generations",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_02_single_seed.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 5,
+            "entropy_bits": 2.128,
+            "activity": 0.5719,
+            "compression": 0.692,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_02_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 5,
+            "entropy_bits": 2.124,
+            "activity": 0.5687,
+            "compression": 0.703,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 3,
+      "name": "Loop 2 Rule 4: Chiral Drifting Generations",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_03_single_seed.png",
+          "label": "translating",
+          "verdict": "WARN",
+          "note": "rigid pattern moving +1 cells per 1 rows from row 2/800",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 4,
+            "entropy_bits": 0.042,
+            "activity": 0.005,
+            "compression": 0.287,
+            "period": 1,
+            "shift": 1,
+            "settle_row": 2
+          }
+        },
+        "random": {
+          "file": "output/rule_03_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 4,
+            "entropy_bits": 1.757,
+            "activity": 0.4437,
+            "compression": 0.59,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 4,
+      "name": "Loop 2 Rule 7: Totalistic-Sum Generations",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_04_single_seed.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 5,
+            "entropy_bits": 2.095,
+            "activity": 0.5832,
+            "compression": 0.795,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_04_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 5,
+            "entropy_bits": 2.194,
+            "activity": 0.6658,
+            "compression": 0.87,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 5,
+      "name": "Loop 3 Rule 8: Anomalous Fractional Diffusion Wave",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_05_single_seed.png",
+          "label": "periodic",
+          "verdict": "WARN",
+          "note": "repeats every 8 rows from row 597/800",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 7,
+            "entropy_bits": 2.475,
+            "activity": 0.674,
+            "compression": 0.033,
+            "period": 8,
+            "shift": 0,
+            "settle_row": 597
+          }
+        },
+        "random": {
+          "file": "output/rule_05_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 7,
+            "entropy_bits": 2.537,
+            "activity": 0.7086,
+            "compression": 0.49,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 6,
+      "name": "Loop 6 Rule 1: Clamped Advection-Diffusion",
+      "gate": "REVIEW",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_06_single_seed.png",
+          "label": "translating",
+          "verdict": "WARN",
+          "note": "rigid pattern moving -1 cells per 1 rows from row 6/800",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 5,
+            "entropy_bits": 0.089,
+            "activity": 0.0175,
+            "compression": 0.149,
+            "period": 1,
+            "shift": -1,
+            "settle_row": 6
+          }
+        },
+        "random": {
+          "file": "output/rule_06_random.png",
+          "label": "translating",
+          "verdict": "WARN",
+          "note": "rigid pattern moving -1 cells per 1 rows from row 6/800",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 7,
+            "entropy_bits": 2.218,
+            "activity": 0.765,
+            "compression": 0.027,
+            "period": 1,
+            "shift": -1,
+            "settle_row": 6
+          }
+        }
+      }
+    },
+    {
+      "rule": 7,
+      "name": "Loop 8 Rule 1: Discrete Hadamard Walk",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_07_single_seed.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 9,
+            "entropy_bits": 2.496,
+            "activity": 0.9976,
+            "compression": 0.04,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_07_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 9,
+            "entropy_bits": 3.169,
+            "activity": 0.8825,
+            "compression": 0.862,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 8,
+      "name": "Loop 8 Rule 2: Quantum Tunneling & Scattering",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_08_single_seed.png",
+          "label": "near-static",
+          "verdict": "WARN",
+          "note": "only ~2.0 cells change per row",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 5,
+            "entropy_bits": 0.085,
+            "activity": 0.0025,
+            "compression": 0.317,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_08_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 7,
+            "entropy_bits": 2.423,
+            "activity": 0.789,
+            "compression": 0.17,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 9,
+      "name": "Loop 9 Rule 8: Class Struggle and Elite Overproduction",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_09_single_seed.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 5,
+            "entropy_bits": 2.289,
+            "activity": 0.8631,
+            "compression": 0.043,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_09_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 5,
+            "entropy_bits": 2.322,
+            "activity": 0.997,
+            "compression": 0.035,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 10,
+      "name": "Loop 10 Rule 8: Arnold's Cat Map Lattice",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_10_single_seed.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 16,
+            "entropy_bits": 3.719,
+            "activity": 0.8322,
+            "compression": 0.308,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_10_random.png",
+          "label": "noise",
+          "verdict": "WARN",
+          "note": "close to random noise (compression 1.00)",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 16,
+            "entropy_bits": 4.0,
+            "activity": 0.9388,
+            "compression": 0.998,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 11,
+      "name": "Loop 11 Rule 3: Directed Percolation",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_11_single_seed.png",
+          "label": "dead",
+          "verdict": "FAIL",
+          "note": "single colour from row 13/800",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 1,
+            "entropy_bits": -0.0,
+            "activity": 0.0,
+            "compression": 1.0,
+            "period": 1,
+            "shift": 0,
+            "settle_row": 13
+          }
+        },
+        "random": {
+          "file": "output/rule_11_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 2,
+            "entropy_bits": 0.995,
+            "activity": 0.4938,
+            "compression": 0.883,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 12,
+      "name": "Loop 25 Rule 8: Stochastic Neuronal Avalanche",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_12_single_seed.png",
+          "label": "near-static",
+          "verdict": "WARN",
+          "note": "only ~3.1 cells change per row",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 6,
+            "entropy_bits": 1.484,
+            "activity": 0.0039,
+            "compression": 0.054,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_12_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 6,
+            "entropy_bits": 2.018,
+            "activity": 0.1952,
+            "compression": 0.608,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 13,
+      "name": "Loop 11 Rule 5: Noisy Majority",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_13_single_seed.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 3,
+            "entropy_bits": 0.444,
+            "activity": 0.0642,
+            "compression": 0.829,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_13_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 3,
+            "entropy_bits": 0.417,
+            "activity": 0.0665,
+            "compression": 0.845,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 14,
+      "name": "Loop 12 Rule 2: Gravitational Wave Interferometer",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_14_single_seed.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 8,
+            "entropy_bits": 1.231,
+            "activity": 0.2634,
+            "compression": 0.058,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_14_random.png",
+          "label": "noise",
+          "verdict": "WARN",
+          "note": "close to random noise (compression 0.91)",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 10,
+            "entropy_bits": 3.28,
+            "activity": 0.8541,
+            "compression": 0.914,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 15,
+      "name": "Loop 12 Rule 4: Gravitational Redshift (Time Dilation)",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_15_single_seed.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 4,
+            "entropy_bits": 1.042,
+            "activity": 0.0051,
+            "compression": 0.074,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_15_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 8,
+            "entropy_bits": 2.979,
+            "activity": 0.0086,
+            "compression": 0.064,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 16,
+      "name": "Loop 13 Rule 4: Spinfoam Amplitude Sum-Over-Histories",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_16_single_seed.png",
+          "label": "dead",
+          "verdict": "FAIL",
+          "note": "single colour from row 1/800",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 1,
+            "entropy_bits": -0.0,
+            "activity": 0.0,
+            "compression": 1.0,
+            "period": 1,
+            "shift": 0,
+            "settle_row": 1
+          }
+        },
+        "random": {
+          "file": "output/rule_16_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 6,
+            "entropy_bits": 2.036,
+            "activity": 0.5749,
+            "compression": 0.725,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 17,
+      "name": "Loop 13 Rule 10: Chiral Immirzi Asymmetry",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_17_single_seed.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 5,
+            "entropy_bits": 2.203,
+            "activity": 0.81,
+            "compression": 0.895,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_17_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 5,
+            "entropy_bits": 2.203,
+            "activity": 0.8126,
+            "compression": 0.887,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 18,
+      "name": "Loop 14 Rule 3: Calabi-Yau Dimension Compactification",
+      "gate": "REVIEW",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_18_single_seed.png",
+          "label": "noise",
+          "verdict": "WARN",
+          "note": "close to random noise (compression 0.91)",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 12,
+            "entropy_bits": 2.943,
+            "activity": 0.8111,
+            "compression": 0.908,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_18_random.png",
+          "label": "noise",
+          "verdict": "WARN",
+          "note": "close to random noise (compression 0.96)",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 12,
+            "entropy_bits": 3.403,
+            "activity": 0.8539,
+            "compression": 0.956,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 19,
+      "name": "Loop 14 Rule 7: Holographic Boundary-to-Bulk Projection (AdS/CFT)",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_19_single_seed.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 10,
+            "entropy_bits": 2.342,
+            "activity": 0.4104,
+            "compression": 0.295,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_19_random.png",
+          "label": "noise",
+          "verdict": "WARN",
+          "note": "close to random noise (compression 0.98)",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 10,
+            "entropy_bits": 3.204,
+            "activity": 0.7106,
+            "compression": 0.976,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 20,
+      "name": "Loop 15 Rule 9: Quantum-Coherent Extremophile",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_20_single_seed.png",
+          "label": "frozen",
+          "verdict": "FAIL",
+          "note": "static from row 3/800",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 2,
+            "entropy_bits": 0.025,
+            "activity": 0.0,
+            "compression": 0.44,
+            "period": 1,
+            "shift": 0,
+            "settle_row": 3
+          }
+        },
+        "random": {
+          "file": "output/rule_20_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 3,
+            "entropy_bits": 1.401,
+            "activity": 0.2628,
+            "compression": 0.636,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 21,
+      "name": "Loop 17 Rule 9: Symbiotic Subversion (Mutualistic Hijacking)",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_21_single_seed.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 5,
+            "entropy_bits": 2.19,
+            "activity": 0.7252,
+            "compression": 0.507,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_21_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 5,
+            "entropy_bits": 2.186,
+            "activity": 0.7434,
+            "compression": 0.35,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 22,
+      "name": "Loop 20 Rule 5: Non-Euclidean Thermal Wormhole",
+      "gate": "REVIEW",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_22_single_seed.png",
+          "label": "noise",
+          "verdict": "WARN",
+          "note": "close to random noise (compression 1.00)",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 12,
+            "entropy_bits": 3.585,
+            "activity": 0.9168,
+            "compression": 1.001,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_22_random.png",
+          "label": "noise",
+          "verdict": "WARN",
+          "note": "close to random noise (compression 1.00)",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 12,
+            "entropy_bits": 3.585,
+            "activity": 0.9167,
+            "compression": 1.0,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 23,
+      "name": "Loop 20 Rule 6: M\u00f6bius Boundary Twist",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_23_single_seed.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 4,
+            "entropy_bits": 1.856,
+            "activity": 1.0,
+            "compression": 0.099,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_23_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 6,
+            "entropy_bits": 1.872,
+            "activity": 0.9938,
+            "compression": 0.473,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 24,
+      "name": "Loop 22 Rule 7: Dissipative Decoherence in a Thermal Bath",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_24_single_seed.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 4,
+            "entropy_bits": 0.912,
+            "activity": 0.0203,
+            "compression": 0.371,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_24_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 4,
+            "entropy_bits": 1.702,
+            "activity": 0.1196,
+            "compression": 0.739,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 25,
+      "name": "Loop 23 Rule 7: Recombination-Driven Zoonotic Spillover",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_25_single_seed.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 6,
+            "entropy_bits": 1.366,
+            "activity": 0.1552,
+            "compression": 0.439,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_25_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 6,
+            "entropy_bits": 1.755,
+            "activity": 0.2798,
+            "compression": 0.693,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 26,
+      "name": "Loop 23 Rule 5: Viroid Hyperparasitism",
+      "gate": "REVIEW",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_26_single_seed.png",
+          "label": "dead",
+          "verdict": "WARN",
+          "note": "single colour from row 482/800",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 1,
+            "entropy_bits": -0.0,
+            "activity": 0.0,
+            "compression": 1.0,
+            "period": 1,
+            "shift": 0,
+            "settle_row": 482
+          }
+        },
+        "random": {
+          "file": "output/rule_26_random.png",
+          "label": "dead",
+          "verdict": "FAIL",
+          "note": "single colour from row 388/800",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 1,
+            "entropy_bits": -0.0,
+            "activity": 0.0,
+            "compression": 1.0,
+            "period": 1,
+            "shift": 0,
+            "settle_row": 388
+          }
+        }
+      }
+    },
+    {
+      "rule": 27,
+      "name": "Loop 24 Rule 1: Stochastic Vicsek-1D Flocking",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_27_single_seed.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 3,
+            "entropy_bits": 1.149,
+            "activity": 0.1054,
+            "compression": 0.7,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_27_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 3,
+            "entropy_bits": 1.151,
+            "activity": 0.1062,
+            "compression": 0.691,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 28,
+      "name": "Loop 24 Rule 2: Multi-Angle Filament Alignment",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_28_single_seed.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 6,
+            "entropy_bits": 1.965,
+            "activity": 0.1445,
+            "compression": 0.452,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_28_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 6,
+            "entropy_bits": 1.187,
+            "activity": 0.1432,
+            "compression": 0.596,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 29,
+      "name": "Loop 24 Rule 9: Active Matter Phase Transition",
+      "gate": "PASS",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_29_single_seed.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 6,
+            "entropy_bits": 2.157,
+            "activity": 0.3916,
+            "compression": 0.73,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_29_random.png",
+          "label": "dynamic",
+          "verdict": "PASS",
+          "note": "aperiodic and structured",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 6,
+            "entropy_bits": 2.158,
+            "activity": 0.3905,
+            "compression": 0.725,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        }
+      }
+    },
+    {
+      "rule": 30,
+      "name": "Loop 25 Rule 1: Stochastic Sandpile Cascade",
+      "gate": "REVIEW",
+      "images": {
+        "single_seed": {
+          "file": "output/rule_30_single_seed.png",
+          "label": "near-static",
+          "verdict": "WARN",
+          "note": "only ~0.9 cells change per row",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 2,
+            "entropy_bits": 0.715,
+            "activity": 0.0011,
+            "compression": 0.107,
+            "period": null,
+            "shift": null,
+            "settle_row": null
+          }
+        },
+        "random": {
+          "file": "output/rule_30_random.png",
+          "label": "dead",
+          "verdict": "WARN",
+          "note": "single colour from row 572/800",
+          "metrics": {
+            "rows": 800,
+            "width": 800,
+            "tail_states": 1,
+            "entropy_bits": -0.0,
+            "activity": 0.0,
+            "compression": 1.0,
+            "period": 1,
+            "shift": 0,
+            "settle_row": 572
+          }
+        }
+      }
+    }
+  ],
+  "rework": []
+}

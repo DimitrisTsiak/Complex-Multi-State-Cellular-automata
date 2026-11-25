@@ -1,0 +1,520 @@
+{
+  "loop": 0,
+  "settings": {
+    "width": 800,
+    "steps": 800,
+    "base_seed": 0
+  },
+  "rules": {
+    "1": {
+      "name": "Loop 1 Rule 4: Staged Excitation Cascade",
+      "n_states": 8,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_01_single_seed.png",
+          "seed": 3831201730,
+          "seconds": 0.31
+        },
+        "random": {
+          "file": "output/rule_01_random.png",
+          "seed": 1634246024,
+          "seconds": 0.25
+        }
+      },
+      "errors": {}
+    },
+    "2": {
+      "name": "Loop 2 Rule 2: Parity-Gated Birth Generations",
+      "n_states": 5,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_02_single_seed.png",
+          "seed": 2926792190,
+          "seconds": 0.21
+        },
+        "random": {
+          "file": "output/rule_02_random.png",
+          "seed": 1432825147,
+          "seconds": 0.31
+        }
+      },
+      "errors": {}
+    },
+    "3": {
+      "name": "Loop 2 Rule 4: Chiral Drifting Generations",
+      "n_states": 4,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_03_single_seed.png",
+          "seed": 198478470,
+          "seconds": 0.23
+        },
+        "random": {
+          "file": "output/rule_03_random.png",
+          "seed": 1880507028,
+          "seconds": 0.37
+        }
+      },
+      "errors": {}
+    },
+    "4": {
+      "name": "Loop 2 Rule 7: Totalistic-Sum Generations",
+      "n_states": 5,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_04_single_seed.png",
+          "seed": 53917133,
+          "seconds": 0.31
+        },
+        "random": {
+          "file": "output/rule_04_random.png",
+          "seed": 809586213,
+          "seconds": 0.43
+        }
+      },
+      "errors": {}
+    },
+    "5": {
+      "name": "Loop 3 Rule 8: Anomalous Fractional Diffusion Wave",
+      "n_states": 7,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_05_single_seed.png",
+          "seed": 1387925762,
+          "seconds": 0.26
+        },
+        "random": {
+          "file": "output/rule_05_random.png",
+          "seed": 1982051579,
+          "seconds": 0.39
+        }
+      },
+      "errors": {}
+    },
+    "6": {
+      "name": "Loop 6 Rule 1: Clamped Advection-Diffusion",
+      "n_states": 8,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_06_single_seed.png",
+          "seed": 3226724236,
+          "seconds": 0.09
+        },
+        "random": {
+          "file": "output/rule_06_random.png",
+          "seed": 1247995767,
+          "seconds": 0.14
+        }
+      },
+      "errors": {}
+    },
+    "7": {
+      "name": "Loop 8 Rule 1: Discrete Hadamard Walk",
+      "n_states": 9,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_07_single_seed.png",
+          "seed": 3185474749,
+          "seconds": 0.26
+        },
+        "random": {
+          "file": "output/rule_07_random.png",
+          "seed": 3717741562,
+          "seconds": 0.33
+        }
+      },
+      "errors": {}
+    },
+    "8": {
+      "name": "Loop 8 Rule 2: Quantum Tunneling & Scattering",
+      "n_states": 8,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_08_single_seed.png",
+          "seed": 2012181747,
+          "seconds": 0.21
+        },
+        "random": {
+          "file": "output/rule_08_random.png",
+          "seed": 1556880329,
+          "seconds": 0.24
+        }
+      },
+      "errors": {}
+    },
+    "9": {
+      "name": "Loop 9 Rule 8: Class Struggle and Elite Overproduction",
+      "n_states": 6,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_09_single_seed.png",
+          "seed": 2790678941,
+          "seconds": 0.31
+        },
+        "random": {
+          "file": "output/rule_09_random.png",
+          "seed": 3229760442,
+          "seconds": 0.23
+        }
+      },
+      "errors": {}
+    },
+    "10": {
+      "name": "Loop 10 Rule 8: Arnold's Cat Map Lattice",
+      "n_states": 16,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_10_single_seed.png",
+          "seed": 1754190249,
+          "seconds": 0.12
+        },
+        "random": {
+          "file": "output/rule_10_random.png",
+          "seed": 3314821097,
+          "seconds": 0.27
+        }
+      },
+      "errors": {}
+    },
+    "11": {
+      "name": "Loop 11 Rule 3: Directed Percolation",
+      "n_states": 2,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_11_single_seed.png",
+          "seed": 3269583209,
+          "seconds": 0.08
+        },
+        "random": {
+          "file": "output/rule_11_random.png",
+          "seed": 2669967446,
+          "seconds": 0.15
+        }
+      },
+      "errors": {}
+    },
+    "12": {
+      "name": "Loop 25 Rule 8: Stochastic Neuronal Avalanche",
+      "n_states": 6,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_12_single_seed.png",
+          "seed": 163117957,
+          "seconds": 0.13
+        },
+        "random": {
+          "file": "output/rule_12_random.png",
+          "seed": 2847144206,
+          "seconds": 0.21
+        }
+      },
+      "errors": {}
+    },
+    "13": {
+      "name": "Loop 11 Rule 5: Noisy Majority",
+      "n_states": 3,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_13_single_seed.png",
+          "seed": 1684409658,
+          "seconds": 0.19
+        },
+        "random": {
+          "file": "output/rule_13_random.png",
+          "seed": 757292114,
+          "seconds": 0.17
+        }
+      },
+      "errors": {}
+    },
+    "14": {
+      "name": "Loop 12 Rule 2: Gravitational Wave Interferometer",
+      "n_states": 10,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_14_single_seed.png",
+          "seed": 2911527299,
+          "seconds": 0.09
+        },
+        "random": {
+          "file": "output/rule_14_random.png",
+          "seed": 2943807340,
+          "seconds": 0.3
+        }
+      },
+      "errors": {}
+    },
+    "15": {
+      "name": "Loop 12 Rule 4: Gravitational Redshift (Time Dilation)",
+      "n_states": 8,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_15_single_seed.png",
+          "seed": 817502473,
+          "seconds": 0.09
+        },
+        "random": {
+          "file": "output/rule_15_random.png",
+          "seed": 3973668217,
+          "seconds": 0.11
+        }
+      },
+      "errors": {}
+    },
+    "16": {
+      "name": "Loop 13 Rule 4: Spinfoam Amplitude Sum-Over-Histories",
+      "n_states": 6,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_16_single_seed.png",
+          "seed": 3207880346,
+          "seconds": 0.07
+        },
+        "random": {
+          "file": "output/rule_16_random.png",
+          "seed": 666081599,
+          "seconds": 0.19
+        }
+      },
+      "errors": {}
+    },
+    "17": {
+      "name": "Loop 13 Rule 10: Chiral Immirzi Asymmetry",
+      "n_states": 5,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_17_single_seed.png",
+          "seed": 3077685671,
+          "seconds": 0.23
+        },
+        "random": {
+          "file": "output/rule_17_random.png",
+          "seed": 2204071655,
+          "seconds": 0.27
+        }
+      },
+      "errors": {}
+    },
+    "18": {
+      "name": "Loop 14 Rule 3: Calabi-Yau Dimension Compactification",
+      "n_states": 12,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_18_single_seed.png",
+          "seed": 566486738,
+          "seconds": 0.27
+        },
+        "random": {
+          "file": "output/rule_18_random.png",
+          "seed": 4000021140,
+          "seconds": 0.31
+        }
+      },
+      "errors": {}
+    },
+    "19": {
+      "name": "Loop 14 Rule 7: Holographic Boundary-to-Bulk Projection (AdS/CFT)",
+      "n_states": 10,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_19_single_seed.png",
+          "seed": 2283809948,
+          "seconds": 0.11
+        },
+        "random": {
+          "file": "output/rule_19_random.png",
+          "seed": 3672626440,
+          "seconds": 0.31
+        }
+      },
+      "errors": {}
+    },
+    "20": {
+      "name": "Loop 15 Rule 9: Quantum-Coherent Extremophile",
+      "n_states": 5,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_20_single_seed.png",
+          "seed": 3756056974,
+          "seconds": 0.1
+        },
+        "random": {
+          "file": "output/rule_20_random.png",
+          "seed": 3740740076,
+          "seconds": 0.16
+        }
+      },
+      "errors": {}
+    },
+    "21": {
+      "name": "Loop 17 Rule 9: Symbiotic Subversion (Mutualistic Hijacking)",
+      "n_states": 6,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_21_single_seed.png",
+          "seed": 376178749,
+          "seconds": 0.22
+        },
+        "random": {
+          "file": "output/rule_21_random.png",
+          "seed": 545615356,
+          "seconds": 0.26
+        }
+      },
+      "errors": {}
+    },
+    "22": {
+      "name": "Loop 20 Rule 5: Non-Euclidean Thermal Wormhole",
+      "n_states": 12,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_22_single_seed.png",
+          "seed": 1755774366,
+          "seconds": 0.23
+        },
+        "random": {
+          "file": "output/rule_22_random.png",
+          "seed": 1109195216,
+          "seconds": 0.27
+        }
+      },
+      "errors": {}
+    },
+    "23": {
+      "name": "Loop 20 Rule 6: M\u00f6bius Boundary Twist",
+      "n_states": 6,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_23_single_seed.png",
+          "seed": 2314966641,
+          "seconds": 0.08
+        },
+        "random": {
+          "file": "output/rule_23_random.png",
+          "seed": 2774800094,
+          "seconds": 0.13
+        }
+      },
+      "errors": {}
+    },
+    "24": {
+      "name": "Loop 22 Rule 7: Dissipative Decoherence in a Thermal Bath",
+      "n_states": 4,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_24_single_seed.png",
+          "seed": 1209890983,
+          "seconds": 0.18
+        },
+        "random": {
+          "file": "output/rule_24_random.png",
+          "seed": 2086034351,
+          "seconds": 0.27
+        }
+      },
+      "errors": {}
+    },
+    "25": {
+      "name": "Loop 23 Rule 7: Recombination-Driven Zoonotic Spillover",
+      "n_states": 6,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_25_single_seed.png",
+          "seed": 263866900,
+          "seconds": 0.32
+        },
+        "random": {
+          "file": "output/rule_25_random.png",
+          "seed": 2698832830,
+          "seconds": 0.4
+        }
+      },
+      "errors": {}
+    },
+    "26": {
+      "name": "Loop 23 Rule 5: Viroid Hyperparasitism",
+      "n_states": 6,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_26_single_seed.png",
+          "seed": 4043028467,
+          "seconds": 0.19
+        },
+        "random": {
+          "file": "output/rule_26_random.png",
+          "seed": 1190936001,
+          "seconds": 0.17
+        }
+      },
+      "errors": {}
+    },
+    "27": {
+      "name": "Loop 24 Rule 1: Stochastic Vicsek-1D Flocking",
+      "n_states": 3,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_27_single_seed.png",
+          "seed": 2698049476,
+          "seconds": 0.42
+        },
+        "random": {
+          "file": "output/rule_27_random.png",
+          "seed": 198495488,
+          "seconds": 0.29
+        }
+      },
+      "errors": {}
+    },
+    "28": {
+      "name": "Loop 24 Rule 2: Multi-Angle Filament Alignment",
+      "n_states": 6,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_28_single_seed.png",
+          "seed": 2078643825,
+          "seconds": 0.38
+        },
+        "random": {
+          "file": "output/rule_28_random.png",
+          "seed": 2716571910,
+          "seconds": 0.39
+        }
+      },
+      "errors": {}
+    },
+    "29": {
+      "name": "Loop 24 Rule 9: Active Matter Phase Transition",
+      "n_states": 6,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_29_single_seed.png",
+          "seed": 2030781380,
+          "seconds": 0.69
+        },
+        "random": {
+          "file": "output/rule_29_random.png",
+          "seed": 3169761557,
+          "seconds": 0.78
+        }
+      },
+      "errors": {}
+    },
+    "30": {
+      "name": "Loop 25 Rule 1: Stochastic Sandpile Cascade",
+      "n_states": 6,
+      "images": {
+        "single_seed": {
+          "file": "output/rule_30_single_seed.png",
+          "seed": 689812448,
+          "seconds": 0.1
+        },
+        "random": {
+          "file": "output/rule_30_random.png",
+          "seed": 2668538541,
+          "seconds": 0.1
+        }
+      },
+      "errors": {}
+    }
+  }
+}
