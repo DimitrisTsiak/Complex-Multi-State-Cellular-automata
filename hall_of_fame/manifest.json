@@ -12,13 +12,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_01_single_seed.png",
-          "seed": 3831201730,
-          "seconds": 0.31
+          "seed": 3831201730
         },
         "random": {
           "file": "output/rule_01_random.png",
-          "seed": 1634246024,
-          "seconds": 0.25
+          "seed": 1634246024
         }
       },
       "errors": {}
@@ -29,13 +27,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_02_single_seed.png",
-          "seed": 2926792190,
-          "seconds": 0.21
+          "seed": 2926792190
         },
         "random": {
           "file": "output/rule_02_random.png",
-          "seed": 1432825147,
-          "seconds": 0.31
+          "seed": 1432825147
         }
       },
       "errors": {}
@@ -46,13 +42,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_03_single_seed.png",
-          "seed": 198478470,
-          "seconds": 0.23
+          "seed": 198478470
         },
         "random": {
           "file": "output/rule_03_random.png",
-          "seed": 1880507028,
-          "seconds": 0.37
+          "seed": 1880507028
         }
       },
       "errors": {}
@@ -63,13 +57,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_04_single_seed.png",
-          "seed": 53917133,
-          "seconds": 0.31
+          "seed": 53917133
         },
         "random": {
           "file": "output/rule_04_random.png",
-          "seed": 809586213,
-          "seconds": 0.43
+          "seed": 809586213
         }
       },
       "errors": {}
@@ -80,13 +72,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_05_single_seed.png",
-          "seed": 1387925762,
-          "seconds": 0.26
+          "seed": 1387925762
         },
         "random": {
           "file": "output/rule_05_random.png",
-          "seed": 1982051579,
-          "seconds": 0.39
+          "seed": 1982051579
         }
       },
       "errors": {}
@@ -97,13 +87,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_06_single_seed.png",
-          "seed": 3226724236,
-          "seconds": 0.09
+          "seed": 3226724236
         },
         "random": {
           "file": "output/rule_06_random.png",
-          "seed": 1247995767,
-          "seconds": 0.14
+          "seed": 1247995767
         }
       },
       "errors": {}
@@ -114,13 +102,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_07_single_seed.png",
-          "seed": 3185474749,
-          "seconds": 0.26
+          "seed": 3185474749
         },
         "random": {
           "file": "output/rule_07_random.png",
-          "seed": 3717741562,
-          "seconds": 0.33
+          "seed": 3717741562
         }
       },
       "errors": {}
@@ -131,13 +117,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_08_single_seed.png",
-          "seed": 2012181747,
-          "seconds": 0.21
+          "seed": 2012181747
         },
         "random": {
           "file": "output/rule_08_random.png",
-          "seed": 1556880329,
-          "seconds": 0.24
+          "seed": 1556880329
         }
       },
       "errors": {}
@@ -148,13 +132,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_09_single_seed.png",
-          "seed": 2790678941,
-          "seconds": 0.31
+          "seed": 2790678941
         },
         "random": {
           "file": "output/rule_09_random.png",
-          "seed": 3229760442,
-          "seconds": 0.23
+          "seed": 3229760442
         }
       },
       "errors": {}
@@ -165,13 +147,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_10_single_seed.png",
-          "seed": 1754190249,
-          "seconds": 0.12
+          "seed": 1754190249
         },
         "random": {
           "file": "output/rule_10_random.png",
-          "seed": 3314821097,
-          "seconds": 0.27
+          "seed": 3314821097
         }
       },
       "errors": {}
@@ -182,13 +162,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_11_single_seed.png",
-          "seed": 3269583209,
-          "seconds": 0.08
+          "seed": 3269583209
         },
         "random": {
           "file": "output/rule_11_random.png",
-          "seed": 2669967446,
-          "seconds": 0.15
+          "seed": 2669967446
         }
       },
       "errors": {}
@@ -199,13 +177,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_12_single_seed.png",
-          "seed": 163117957,
-          "seconds": 0.13
+          "seed": 163117957
         },
         "random": {
           "file": "output/rule_12_random.png",
-          "seed": 2847144206,
-          "seconds": 0.21
+          "seed": 2847144206
         }
       },
       "errors": {}
@@ -216,13 +192,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_13_single_seed.png",
-          "seed": 1684409658,
-          "seconds": 0.19
+          "seed": 1684409658
         },
         "random": {
           "file": "output/rule_13_random.png",
-          "seed": 757292114,
-          "seconds": 0.17
+          "seed": 757292114
         }
       },
       "errors": {}
@@ -233,13 +207,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_14_single_seed.png",
-          "seed": 2911527299,
-          "seconds": 0.09
+          "seed": 2911527299
         },
         "random": {
           "file": "output/rule_14_random.png",
-          "seed": 2943807340,
-          "seconds": 0.3
+          "seed": 2943807340
         }
       },
       "errors": {}
@@ -250,13 +222,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_15_single_seed.png",
-          "seed": 817502473,
-          "seconds": 0.09
+          "seed": 817502473
         },
         "random": {
           "file": "output/rule_15_random.png",
-          "seed": 3973668217,
-          "seconds": 0.11
+          "seed": 3973668217
         }
       },
       "errors": {}
@@ -267,13 +237,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_16_single_seed.png",
-          "seed": 3207880346,
-          "seconds": 0.07
+          "seed": 3207880346
         },
         "random": {
           "file": "output/rule_16_random.png",
-          "seed": 666081599,
-          "seconds": 0.19
+          "seed": 666081599
         }
       },
       "errors": {}
@@ -284,13 +252,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_17_single_seed.png",
-          "seed": 3077685671,
-          "seconds": 0.23
+          "seed": 3077685671
         },
         "random": {
           "file": "output/rule_17_random.png",
-          "seed": 2204071655,
-          "seconds": 0.27
+          "seed": 2204071655
         }
       },
       "errors": {}
@@ -301,13 +267,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_18_single_seed.png",
-          "seed": 566486738,
-          "seconds": 0.27
+          "seed": 566486738
         },
         "random": {
           "file": "output/rule_18_random.png",
-          "seed": 4000021140,
-          "seconds": 0.31
+          "seed": 4000021140
         }
       },
       "errors": {}
@@ -318,13 +282,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_19_single_seed.png",
-          "seed": 2283809948,
-          "seconds": 0.11
+          "seed": 2283809948
         },
         "random": {
           "file": "output/rule_19_random.png",
-          "seed": 3672626440,
-          "seconds": 0.31
+          "seed": 3672626440
         }
       },
       "errors": {}
@@ -335,13 +297,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_20_single_seed.png",
-          "seed": 3756056974,
-          "seconds": 0.1
+          "seed": 3756056974
         },
         "random": {
           "file": "output/rule_20_random.png",
-          "seed": 3740740076,
-          "seconds": 0.16
+          "seed": 3740740076
         }
       },
       "errors": {}
@@ -352,13 +312,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_21_single_seed.png",
-          "seed": 376178749,
-          "seconds": 0.22
+          "seed": 376178749
         },
         "random": {
           "file": "output/rule_21_random.png",
-          "seed": 545615356,
-          "seconds": 0.26
+          "seed": 545615356
         }
       },
       "errors": {}
@@ -369,13 +327,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_22_single_seed.png",
-          "seed": 1755774366,
-          "seconds": 0.23
+          "seed": 1755774366
         },
         "random": {
           "file": "output/rule_22_random.png",
-          "seed": 1109195216,
-          "seconds": 0.27
+          "seed": 1109195216
         }
       },
       "errors": {}
@@ -386,13 +342,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_23_single_seed.png",
-          "seed": 2314966641,
-          "seconds": 0.08
+          "seed": 2314966641
         },
         "random": {
           "file": "output/rule_23_random.png",
-          "seed": 2774800094,
-          "seconds": 0.13
+          "seed": 2774800094
         }
       },
       "errors": {}
@@ -403,13 +357,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_24_single_seed.png",
-          "seed": 1209890983,
-          "seconds": 0.18
+          "seed": 1209890983
         },
         "random": {
           "file": "output/rule_24_random.png",
-          "seed": 2086034351,
-          "seconds": 0.27
+          "seed": 2086034351
         }
       },
       "errors": {}
@@ -420,13 +372,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_25_single_seed.png",
-          "seed": 263866900,
-          "seconds": 0.32
+          "seed": 263866900
         },
         "random": {
           "file": "output/rule_25_random.png",
-          "seed": 2698832830,
-          "seconds": 0.4
+          "seed": 2698832830
         }
       },
       "errors": {}
@@ -437,13 +387,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_26_single_seed.png",
-          "seed": 4043028467,
-          "seconds": 0.19
+          "seed": 4043028467
         },
         "random": {
           "file": "output/rule_26_random.png",
-          "seed": 1190936001,
-          "seconds": 0.17
+          "seed": 1190936001
         }
       },
       "errors": {}
@@ -454,13 +402,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_27_single_seed.png",
-          "seed": 2698049476,
-          "seconds": 0.42
+          "seed": 2698049476
         },
         "random": {
           "file": "output/rule_27_random.png",
-          "seed": 198495488,
-          "seconds": 0.29
+          "seed": 198495488
         }
       },
       "errors": {}
@@ -471,13 +417,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_28_single_seed.png",
-          "seed": 2078643825,
-          "seconds": 0.38
+          "seed": 2078643825
         },
         "random": {
           "file": "output/rule_28_random.png",
-          "seed": 2716571910,
-          "seconds": 0.39
+          "seed": 2716571910
         }
       },
       "errors": {}
@@ -488,13 +432,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_29_single_seed.png",
-          "seed": 2030781380,
-          "seconds": 0.69
+          "seed": 2030781380
         },
         "random": {
           "file": "output/rule_29_random.png",
-          "seed": 3169761557,
-          "seconds": 0.78
+          "seed": 3169761557
         }
       },
       "errors": {}
@@ -505,13 +447,11 @@
       "images": {
         "single_seed": {
           "file": "output/rule_30_single_seed.png",
-          "seed": 689812448,
-          "seconds": 0.1
+          "seed": 689812448
         },
         "random": {
           "file": "output/rule_30_random.png",
-          "seed": 2668538541,
-          "seconds": 0.1
+          "seed": 2668538541
         }
       },
       "errors": {}

@@ -432,23 +432,30 @@ L10_R08 = Rule(
 # =====================================================================================
 
 # -- Loop 11, Rule 3: Directed Percolation (Branching Organic Dendrites) ---------------
-# An active cell activates each neighbour independently with probability 0.65.
-def l11_r03_step(arr, rng, t):
+# An active cell activates each neighbour independently with probability p (0.65 in the
+# original). Sweepable: below the critical point p_c ~ 0.6447 activity always dies out,
+# above it it spreads, and near it the clusters are fractal.
+def l11_r03_step(arr, rng, t, p=0.65):
     left = np.roll(arr, 1)
     right = np.roll(arr, -1)
-    r_left = rng.random(arr.shape) < 0.65
-    r_right = rng.random(arr.shape) < 0.65
+    r_left = rng.random(arr.shape) < p
+    r_right = rng.random(arr.shape) < p
     prop = (left == 1) & r_left | (right == 1) & r_right
     return prop.astype(np.int32)
 
 
-L11_R03 = Rule(
-    name="Loop 11 Rule 3: Directed Percolation",
-    n_states=2,
-    step=l11_r03_step,
-    palette=[(5, 5, 25), (0, 191, 255)],
-    description="Showcase pick: random start.",
-)
+def directed_percolation(p=0.65):
+    """Loop 11 Rule 3 with its spreading probability p as a parameter."""
+    return Rule(
+        name="Loop 11 Rule 3: Directed Percolation",
+        n_states=2,
+        step=lambda arr, rng, t: l11_r03_step(arr, rng, t, p),
+        palette=[(5, 5, 25), (0, 191, 255)],
+        description="Showcase pick: random start.",
+    )
+
+
+L11_R03 = directed_percolation()
 
 
 # -- Loop 11, Rule 5: Noisy Majority (Cyan-White Digital Rain) -------------------------

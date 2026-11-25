@@ -128,12 +128,32 @@ def simulate(
     seed: int = DEFAULT_SEED,
     label: Optional[str] = None,
 ) -> np.ndarray:
-    """Return the ``(steps, width)`` space-time grid of visible states. Row 0 is the start."""
-    label = label or rule.name
+    """Return the ``(steps, width)`` space-time grid of visible states. Row 0 is the start.
+
+    One generator, seeded with ``seed``, draws the starting state and then the dynamics.
+    """
     rng = np.random.default_rng(seed)
+    state = initial_state(rule, init_type, width, rng)
+    return evolve(rule, state, init_type, width, steps, rng, label)
+
+
+def initial_state(rule: Rule, init_type: str, width: int, rng: np.random.Generator) -> Any:
+    """The rule's starting state for ``init_type``: its own ``init``, else the default."""
     state = rule.init(init_type, width, rng) if rule.init is not None else None
-    if state is None:
-        state = default_initial_state(rule, init_type, width, rng)
+    return default_initial_state(rule, init_type, width, rng) if state is None else state
+
+
+def evolve(
+    rule: Rule,
+    state: Any,
+    init_type: str,
+    width: int,
+    steps: int,
+    rng: np.random.Generator,
+    label: Optional[str] = None,
+) -> np.ndarray:
+    """Run ``steps - 1`` steps from ``state``; return the ``(steps, width)`` grid of visible states."""
+    label = label or rule.name
     grid = np.empty((steps, width), dtype=np.uint8 if rule.n_states <= 256 else np.int16)
     grid[0] = _visible_row(rule, state, width, f"{label} [{init_type}] row 0")
     for t in range(steps - 1):
@@ -250,7 +270,7 @@ def run_loop(
                 continue
             render(grid, rule.palette).save(out_dir / name)
             seconds = round(time.perf_counter() - started, 2)
-            entry["images"][init_type] = {"file": f"output/{name}", "seed": seed, "seconds": seconds}
+            entry["images"][init_type] = {"file": f"output/{name}", "seed": seed}  # no timings: keeps re-runs diff-free
             log(f"rule {index:02d} {init_type:<11}  {seconds:6.2f}s  output/{name}")
         manifest["rules"][str(index)] = entry
 

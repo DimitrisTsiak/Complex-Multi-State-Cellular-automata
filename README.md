@@ -51,6 +51,20 @@ python -m ca_core triage generations                    # re-score the images of
 
 ---
 
+## Parameter Sweeps
+
+`python -m ca_core sweep` makes a GIF of one rule while a float parameter moves through a range. Each frame shows the single-seed run next to the random run. In every frame both runs start from the same rows and use the same random numbers, so only the parameter changes. The captions show each run's quality-gate label, which makes phase transitions easy to spot.
+
+```bash
+python -m ca_core sweep hall_of_fame/generate_ca.py:directed_percolation --start 0.55 --stop 0.75 --frames 41
+```
+
+This writes `sweeps/directed_percolation_p.gif`. Directed percolation has a known phase transition at p ≈ 0.6447: the single seed dies out below it and survives above it. Options: `--param` (when the function has several parameters), `--seed`, `--width`, `--steps`, `--scale`, `--duration`, `--hold`, `--bounce` (play forward, then back) and `--out`.
+
+To make any rule sweepable, write a function that takes the parameter as a keyword argument and returns a `Rule`, like `directed_percolation(p=0.65)` in `hall_of_fame/generate_ca.py`.
+
+---
+
 ## Showcase & Hall of Fame
 
 - **`showcase/`** keeps the original images of the 30 showcase picks. Generated PNGs are otherwise not committed, and several picks came from unseeded randomness, so these files are the only copies.

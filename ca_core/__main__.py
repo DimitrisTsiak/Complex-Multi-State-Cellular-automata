@@ -1,4 +1,4 @@
-"""Command line: ``python -m ca_core run|triage ...`` (from the repository root)."""
+"""Command line: ``python -m ca_core run|triage|sweep ...`` (from the repository root)."""
 from __future__ import annotations
 
 import argparse
@@ -67,6 +67,20 @@ def cmd_triage(args) -> int:
     return 0
 
 
+def cmd_sweep(args) -> int:
+    from .sweep import load_factory, make_sweep_gif
+
+    try:
+        make_sweep_gif(
+            load_factory(args.factory), args.start, args.stop, args.frames, args.out, args.param,
+            args.width, args.steps, args.seed, args.scale, args.duration, args.hold, args.bounce,
+        )
+    except RuleError as exc:
+        print(f"ERROR: {exc}")
+        return 1
+    return 0
+
+
 def main(argv=None) -> int:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(errors="replace")
@@ -87,6 +101,22 @@ def main(argv=None) -> int:
     tri.add_argument("--no-write", action="store_true", help="print only; don't write triage files")
     tri.add_argument("-v", "--verbose", action="store_true", help="per-rule detail when scoring several loops")
     tri.set_defaults(func=cmd_triage)
+
+    swp = sub.add_parser("sweep", help="GIF of one rule as a float parameter varies (single seed | random)")
+    swp.add_argument("factory", help="path/to/file.py:function that takes the parameter and returns a Rule")
+    swp.add_argument("--param", help="parameter to sweep (default: the function's only parameter)")
+    swp.add_argument("--start", type=float, required=True, help="first parameter value")
+    swp.add_argument("--stop", type=float, required=True, help="last parameter value")
+    swp.add_argument("--frames", type=int, default=41, help="number of values, evenly spaced (default 41)")
+    swp.add_argument("--width", type=int, default=DEFAULT_WIDTH, help=f"cells per row (default {DEFAULT_WIDTH})")
+    swp.add_argument("--steps", type=int, default=DEFAULT_STEPS, help=f"rows per image (default {DEFAULT_STEPS})")
+    swp.add_argument("--seed", type=int, default=DEFAULT_SEED, help="seed shared by every frame")
+    swp.add_argument("--scale", type=float, default=0.5, help="panel size relative to width x steps (default 0.5)")
+    swp.add_argument("--duration", type=int, default=150, help="milliseconds per frame (default 150)")
+    swp.add_argument("--hold", type=int, default=1200, help="milliseconds on the first and last frame (default 1200)")
+    swp.add_argument("--bounce", action="store_true", help="play forward, then backward")
+    swp.add_argument("--out", type=Path, help="output GIF (default sweeps/<function>_<param>.gif)")
+    swp.set_defaults(func=cmd_sweep)
 
     args = parser.parse_args(argv)
     return args.func(args)
