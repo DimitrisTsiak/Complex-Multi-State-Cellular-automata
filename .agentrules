@@ -3,7 +3,7 @@
 This file defines the standard operating procedures and guidelines for the cellular automata (CA) multi-agent pipeline in this workspace.
 
 ##  Core Objective
-Discover, simulate, and visually review novel multi-state cellular automata rules over sequential or concurrent loops. In each loop, design 10 new, unique rules (Option A), run simulations for both single-seed and random-seed conditions, and visually select the most interesting patterns.
+Discover, simulate, and visually review novel multi-state cellular automata rules over sequential or concurrent loops. In each loop, design 10 new, unique rules (Option A), run simulations for both single-seed and random-seed conditions with the shared engine (`ca_core/`), pass the automatic quality gate, and visually select the most interesting patterns.
 
 ---
 
@@ -21,12 +21,16 @@ Discover, simulate, and visually review novel multi-state cellular automata rule
 *   **Role**: Cellular Automata Programmer
 *   **Prompt**:
     ```
-    Read the designed rules in generations/loop_{loop_number}/rules.md. Write a Python script generations/loop_{loop_number}/generate_ca.py that simulates these 10 rules for single-seed and random initializations. Save the 20 PNGs (800x800 resolution) in generations/loop_{loop_number}/output/ using unique vibrant color palettes. Run the script to verify.
+    Read the designed rules in generations/loop_{loop_number}/rules.md. Create generations/loop_{loop_number}/generate_ca.py by copying ca_core/template_generate_ca.py and replacing its example rules with these 10 rules, in the same order. The file only declares RULES (step functions, palettes, optional init/view functions). The shared engine in ca_core/ handles initial conditions, seeding, simulation, rendering and file naming, so do not write simulation loops or image code. Use the `rng` argument for all randomness, never np.random.*. Give each rule a unique, vibrant palette with exactly n_states distinct colours.
 
-    CRITICAL: The output PNG files MUST follow a strict naming convention:
-    1. Zero-pad the rule number to 2 digits (e.g. rule_01, rule_02, ..., rule_10).
-    2. Use exactly "single_seed" or "random" for the initialization type suffix.
-    Example Format: "rule_01_single_seed.png" and "rule_01_random.png".
+    From the repository root, run:
+        python -m ca_core run generations/loop_{loop_number}
+    This writes the 20 PNGs (800x800) to generations/loop_{loop_number}/output/ (rule_01_single_seed.png, rule_01_random.png, ...) plus manifest.json, triage.md and triage.json. If a rule errors, fix it and run again.
+
+    Then apply the quality gate in generations/loop_{loop_number}/triage.md:
+    - For each rule whose Gate is REWORK (every image dead or frozen before the halfway row, or crashed), make up to 2 retuning attempts. Change its free parameters (thresholds, probabilities, radius, number of states, seed_state, a custom init) but keep the mechanism described in rules.md. Re-run only those rules, e.g. `python -m ca_core run generations/loop_{loop_number} --rules 3,7`, and read triage.md again.
+    - Record every change, with the gate result before and after, under a "## Tuning Notes" heading at the end of rules.md.
+    - If a rule is still REWORK after 2 attempts, mark it "FAILED GATE" in the Tuning Notes and leave it. Do not retune rules whose Gate is REVIEW or PASS.
     ```
 *   **Capabilities**: `enable_write_tools=True` (to write and run python scripts).
 
@@ -34,16 +38,25 @@ Discover, simulate, and visually review novel multi-state cellular automata rule
 *   **Role**: Aesthetic and Visual Analyst
 *   **Prompt**:
     ```
-    Review the 20 space-time diagrams in generations/loop_{loop_number}/output/ using the view_file tool. Analyze their visual structure, order vs. chaos, and aesthetics. Identify the top 3 winner rules. Write a detailed report to generations/loop_{loop_number}/review_report.md.
+    First read generations/loop_{loop_number}/triage.md (the automatic triage of every image: PASS / WARN / FAIL / ERROR, with the reason) and the Tuning Notes at the end of rules.md. Then review the 20 space-time diagrams in generations/loop_{loop_number}/output/ using the view_file tool. Analyze their visual structure, order vs. chaos, and aesthetics. The triage is a guide, not a verdict on beauty: a WARN image can win, and you should say where you disagree with it. Pick up to 3 winner rules. If fewer than 3 rules are genuinely interesting (for example, most images are static barcodes), pick fewer or none and say why; never fill the slots with images you would not defend. Write a detailed report to generations/loop_{loop_number}/review_report.md.
     ```
 *   **Capabilities**: `enable_write_tools=True` (to write the review report and view images).
+
+---
+
+## Shared Engine & Quality Gate
+
+*   `ca_core/` is the shared simulation engine and quality gate. Loops 26 onward declare their rules with it. Loops 1-25 are self-contained legacy scripts and stay as they are.
+*   Every image's seed is derived from (loop, rule, init type), and manifest.json records it, so re-running a loop reproduces its images exactly.
+*   The gate labels each image dead, frozen, periodic, translating, near-static, noise or dynamic from its last rows. A rule needs rework only when none of its images is better than FAIL.
+*   `python -m ca_core triage generations` re-scores the existing images of every loop (add `--no-write` to only print).
 
 ---
 
 ## Concurrency & Pipelining Strategy
 
 To run multiple loops efficiently:
-1.  **Pipeline Sequence**: Do not wait for the Visual Review of Loop $N$ to finish before starting Loop $N+1$. As soon as Loop $N$'s Code Generation is complete, launch the Visual Reviewer for Loop $N$ and concurrently launch the Rule Designer for Loop $N+1$.
+1.  **Pipeline Sequence**: Do not wait for the Visual Review of Loop $N$ to finish before starting Loop $N+1$. As soon as Loop $N$'s Code Generation and quality gate are complete, launch the Visual Reviewer for Loop $N$ and concurrently launch the Rule Designer for Loop $N+1$.
 2.  **Parallel Domain Partitioning**: For large batches of loops, partition the design space into distinct domains and launch the Rule Designers in parallel:
     *   **Loop 3**: Reaction-Diffusion & Chemical Waves
     *   **Loop 4**: Granular Flows, Sandpiles & Gravity
